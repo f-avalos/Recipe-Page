@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('woff2');
+}
+
+@font-face{
+    font-family: 'YoungSerif';
+    font-style: normal;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('woff2');
+}
+
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+
+    --brown800: hsl(14, 45%, 36%);
+
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    background-color: var(--stone100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card{
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem 1rem;
+    padding: 2rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    max-width: 40rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img img{
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.detail .title h1{
+    font-family: 'YoungSerif', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--stone900);
+    margin-bottom: 1rem;
+}
+
+.detail p {
+    color: var(--stone600);
+    margin-bottom: 1rem;
+}
+
+.box{
+    background-color: var(--rose50);
+    padding: 1.2rem 1.5rem;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+}
+
+.box h3{
+    color: var(--rose800);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .7rem;
+}
+
+.box ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.box ul li{
+    color: var(--stone600);
+}
+
+
+.box ul li::before{
+    content: '•';
+    color: var(--rose800);
+    font-weight: 700;
+    display: inline-block;
+    width: 1rem;
+    margin: 0 .5rem;
+}
+
+.box ul li{
+    color: var(--stone600);
+    list-style: none;
+}
+
+.ingredients{
+    margin: 1.7rem 0;
+}
+
+.ingredients h2{
+    font-family: 'YoungSerif', sans-serif;
+    color: var(--brown800);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.ingredients ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: inside;
+    color: var(--brown800);
+    margin: 0 .5rem;
+}
+
+.ingredients ul li span{
+    margin-left: .5rem;
+    color: var(--stone600);
+}
+
+.instructions{
+    margin: 1.7rem 0;
+}
+
+.instructions h2{
+    font-family: 'YoungSerif', sans-serif;
+    color: var(--brown800);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.instructions ol{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 700;
+    list-style: inside;
+    list-style-type: decimal;
+    color: var(--brown800);
+    margin: 0 .5rem;
+}
+
+.instructions ol li span{
+    margin-left: .5rem;
+    color: var(--stone600);
+    font-weight: 400;
+}
+
+.nutrition{
+    margin-top: 1.7rem ;
+}
+
+.nutrition h2{
+    font-family: 'YoungSerif', sans-serif;
+    color: var(--brown800);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.nutrition p{
+    color: var(--stone600);
+}
+
+/* tabla */
+
+.nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.nutrition table tr{
+    border-bottom: 1px solid var(--stone150);
+    text-align: left;
+}
+
+.nutrition table tr:last-child{
+    border-bottom: none;
+}
+
+.nutrition table th{
+    color: var(--stone600);
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+
+.nutrition table td{
+    color: var(--brown800);
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 375px){
+    .card{
+        margin: 0;
+    }
+
+    .content .header-img {
+        margin-top: -2rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    .content .header-img img{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+}
