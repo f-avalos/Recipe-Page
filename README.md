@@ -15,14 +15,16 @@ Información sobre la receta y preparación de un Omelette Simple, los recursos 
 ### Screenshot
 
 _Vista escritorio_
+
 ![Vista Escritorio](./assets/images/example-desktop.png)
 
 _Vista teléfono_
+
 ![Vista Movil](./assets/images/example-mobile-375px.png)
 
 ### Links
 
-- Sitio: [-](#)
+- Sitio: [Recipe Page](https://f-avalos.github.io/Recipe-Page/)
 
 ## Proceso
 
